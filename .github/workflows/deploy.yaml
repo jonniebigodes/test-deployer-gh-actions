@@ -12,9 +12,10 @@ on:
 # List of jobs
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.build-publish.outputs.page_url }}
+    ## Errors ( branch protection rules) (https://github.com/jonniebigodes/test-deployer-gh-actions/actions/runs/6630307419)
+    #environment:
+    # name: github-pages
+    # url: ${{ steps.build-publish.outputs.page_url }}
     # Operating System
     runs-on: ubuntu-latest
     # Job steps
