@@ -9,6 +9,11 @@ on:
     branches:
       - "docs-deploy"
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 # List of jobs
 jobs:
   deploy:
